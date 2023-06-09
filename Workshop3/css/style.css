@@ -1,0 +1,140 @@
+/* modified/untracked -> staged -> committed */
+/* - universal * 
+- tag: p, div, a,
+- clasa: .numeClasa,.logo-Container
+- id: #detaliiDespreCurs */
+
+/* RESET = reseteaza setarile browserul */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  /* border: 2px solid red; */
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.logo-container {
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  padding: 20px;
+  
+}
+
+.logo-container img {
+  width: 15%;
+  border: 5px double gray;
+  border-radius: 50%;
+}
+
+.logo-container h1 {
+  font-size: 400%;
+  color: floralwhite;
+  text-shadow: 2px 2px 5px black;
+}
+
+nav ul {
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+nav li a {
+  text-decoration: none;
+  color: darkmagenta;
+}
+
+.grid {
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* check why */
+.grid:last-child {
+  padding-bottom: 100px;
+}
+
+#detaliiDespreCurs .icon {
+  height: 100px;
+  width: 25px;
+  color: blueviolet;
+}
+
+#despreWorkshop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 33%;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 10px;
+  /* display: flex;
+  align-items: center; */
+}
+
+.card ol {
+  list-style-type: none;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.card-title {
+  background-color: rgba(213, 184, 255, 1);
+  padding: 15px 0;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+#tehnologii dl {
+  text-align: center;
+}
+#tehnologii dt {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+#tehnologii h6 {
+  display: none;
+}
+
+details {
+  background-color: rgba(213, 184, 255, 1);
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+summary {
+  cursor: pointer;
+}
+
+.top {
+  background-color: rgb(185, 149, 219);
+  margin-left: 400px;
+  margin-right: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 5px 5px red;
+}
+
+.top a {
+  background-color: rgb(185, 149, 219);
+  color: azure;
+}
