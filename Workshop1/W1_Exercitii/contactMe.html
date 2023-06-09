@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <style>
+      .container-form {
+        max-width: 50%;
+        margin: auto;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/itf.png" alt="Logo paginii mele" title="" width="50" />
+    </header>
+    <h1>Contacteaza-ma</h1>
+    <form action="https://httpbin.org/get" method="get">
+      <div class="container-form">
+        <fieldset>
+          <legend>Introdu Date despre tine</legend>
+          <label for="firstName">Prenume:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Introdu prenumele"
+            autocomplete="off"
+            required
+          />
+          <p>
+            <label for="lastName">Nume:</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Introdu numele"
+              autocomplete="on"
+            />
+          </p>
+          <p>
+            <label for="birthDay">
+              Data <span style="color: red"> de nastere </span>
+            </label>
+            <input type="date" id="birthDay" />
+          </p>
+          <p>
+            <label for="phoneNumber">Telefon</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" />
+          </p>
+          <p>
+            <label for="comments">Alte comentarii</label><br />
+            <textarea
+              name="comments"
+              id="comments"
+              maxlength="4"
+              cols="15"
+              rows="15"
+              placeholder="Adauga comentariile tale"
+            >
+            </textarea>
+          </p>
+          <p>
+            <label for="">Care este limbajul tau preferat</label>
+            <select name="limbajPreferat" id="limbajPreferat">
+              <optgroup label="Limbaj de programare">
+                <option value="java">Java</option>
+              </optgroup>
+              <optgroup label="Limbaj de scripting">
+                <option value="javascript">JavaScript</option>
+              </optgroup>
+              <optgroup label="Alte limbaje">
+                <option value="html">Html</option>
+                <option value="css" selected>Css</option>
+              </optgroup>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <p>Ce parte din curs preferati</p>
+          <p>
+            <label for="prefferedCurs1">Teorie</label>
+            <input
+              type="checkbox"
+              name="prefferedCurs"
+              id="prefferedCurs1"
+              value="Teorie"
+            />
+            <label for="prefferedCurs2">Practica</label>
+            <input
+              type="checkbox"
+              name="prefferedCurs"
+              id="prefferedCurs2"
+              value="Practica"
+            />
+            <label for="prefferedCurs3">Examen</label>
+            <input
+              type="checkbox"
+              name="prefferedCurs"
+              id="prefferedCurs3"
+              value="Examen"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Alege Partea preferata a cursului</legend>
+          <h5>Ce curs preferati</h5>
+          <p>
+            <label for="prefferedCurs1">Teorie</label>
+            <input
+              type="radio"
+              name="prefferedCursRadio"
+              id="prefferedCurs1"
+              value="Teorie"
+            />
+            <label for="prefferedCurs2" value="Practica">Practica</label>
+            <input
+              type="radio"
+              name="prefferedCursRadio"
+              id="prefferedCurs2"
+              value="Practica"
+            />
+            <label for="prefferedCurs3">Examen</label>
+            <input
+              type="radio"
+              name="prefferedCursRadio"
+              id="prefferedCurs3"
+              value="Examen"
+            />
+          </p>
+        </fieldset>
+
+        <button type="submit">Trimite formularul</button>
+        <button type="reset">Reseteaza</button>
+      </div>
+    </form>
+
+    <footer>
+      <a href="about.html">Despre mine</a> |
+      <a href="contactMe.html">Contacteaza-ma</a>
+      <p>&lt;&lt; &copy; Marina Silaghi &gt;&gt;</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!--
+  Shortcut-uri utile:  
+  shift + ! + Enter = introduce scheletul paginii
+  CTRL + / = commenteaza/decomenteaza linia/blocul selectat
+  ALT +Z   = Word wrap ca sa vedeti tot textul pe ecran sa nu faceto scroll dreapta in editor
+  
+  Notiuni utile:
+  deprecated = care nu se mai foloseste 
+
+  Extensii Visual Studio Code utile:
+  Prettier Code formatter
+  Live Preview (Microsoft)
+
+  Linkuri utile:
+  https://appdevtools.com/html-validator  -  valideaza html-ul
+  https://www.w3schools.com/html/html_entities.asp  - contine codurile entitatilor
+ 
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Prima pagina HTML</title>
+    <meta name="author" content="Marina Silaghi" />
+    <meta
+      name="description"
+      content="Aici vom desrie prin exercitii tagurile invatate"
+    />
+    <link rel="shortcut icon" href="img/itf.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <img src="img/itf.png" alt="Logo paginii mele" title="" width="50" />
+      <p id="topPage">Menu</p>
+      <ul>
+        <li><a href="#despreCurs">Despre Curs</a></li>
+        <li><a href="#despreWorkshop">Despre Workshop</a></li>
+        <li><a href="#detaliiDespreCurs">Detalii despre Curs</a></li>
+        <li><a href="#terminareCurs">Ce voi face cand termin cursul</a></li>
+        <li><a href="#tehnologii">Tehnologiile din Curs</a></li>
+      </ul>
+    </header>
+
+    <hr />
+    <section id="despreCurs">
+      <h1>
+        Prima lectie de
+        <a target="_blank" href="https://www.itfactory.ro/JVJS1/"
+          >HTML, CSS si Javascript</a
+        >
+      </h1>
+      <p>Imi place foarte mult sa invat despre <strong>HTML</strong></p>
+
+      <p>
+        Cursul este impartit in <mark> teorie </mark>, <em>practica</em> si
+        <strong>examen final</strong>
+      </p>
+      <figure>
+        <img
+          src="img/learnHtml.jpg"
+          alt="Learn with us html"
+          title="LEarn with us"
+          width="200"
+        />
+        <figcaption>Aceasta este descrierea pozei</figcaption>
+      </figure>
+      <hr />
+    </section>
+
+    <section id="despreWorkshop">
+      <h2>Ce vom face in weekend la workshop</h2>
+      <ol>
+        <li>Vom face exercitii</li>
+        <li>Vom discuta</li>
+        <li>Voi recapitula teoria</li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe
+          doloremque et, dignissimos sequi molestiae impedit ab ullam provident
+          repellat voluptate ea distinctio fuga facere labore consequuntur,
+          exercitationem voluptates consequatur.
+        </li>
+      </ol>
+      <hr />
+    </section>
+    <section id="detaliiDespreCurs">
+      <h3>Mai multe detalii despre curs:</h3>
+      <ul>
+        <li>Teoria se va tine in cursul saptamanii</li>
+        <li>Practica se va tine in weekend</li>
+        <li>
+          Examenul final se va tine dupa terminarea modulului de JavaScript
+        </li>
+      </ul>
+      <hr />
+    </section>
+
+    <section id="terminareCurs">
+      <h4>Ce voi face cand termin cursul</h4>
+      <ul>
+        <li>Voi da examen</li>
+        <li>Plec in Bahamas</li>
+        <li>Ma voi angaja in domeniu</li>
+      </ul>
+
+      <p>Ce voi face in realitate:</p>
+      <img src="img/celebrate.jpg" width="200" alt="party party" />
+      <hr />
+    </section>
+    <section id="angajare">
+      <h5>Dupa ce ma angajez</h5>
+      <ol>
+        <li>Voi invata si pe altii</li>
+        <li>Voi face bani</li>
+        <li>Voi fi deschis la alte oportunitati de angajare</li>
+      </ol>
+
+      <p>Ce voi face in realitate:</p>
+      <img src="img/swim.gif" alt="party" />
+      <hr />
+    </section>
+
+    <section id="tehnologii">
+      <h6>Modulul este compus din tehnologiile</h6>
+      <dl>
+        <dt>Java</dt>
+        <dd>Este un limbaj de programare</dd>
+        <dt>JavaScript</dt>
+        <dd>Este un limbaj de scripting/interpretat</dd>
+        <dt>Java</dt>
+        <dd>Este un limbaj de programare</dd>
+        <dt>JavaScript</dt>
+        <dd>Este un limbaj de scripting/interpretat</dd>
+      </dl>
+      <hr />
+      <a href="#topPage">Back to top</a>
+    </section>
+    <br />
+    <section id="tagNouDetails">
+      <details>
+        <summary>Aici veti gasi linkurile spre documentatie</summary>
+        <ul>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/"
+              >MDN pentru mai multe informatii despre taguri</a
+            >
+          </li>
+          <li>
+            <a href="https://www.itfactory.ro/JVJS1/">Detalii despre curs</a>
+          </li>
+        </ul>
+      </details>
+    </section>
+    <footer>
+      <p>
+        <a href="about.html">Despre mine</a> |
+        <a href="contactMe.html">Contacteaza-ma</a>
+      </p>
+      <p>&lt;&lt; &copy; Marina Silaghi &gt;&gt;</p>
+    </footer>
+  </body>
+</html>
