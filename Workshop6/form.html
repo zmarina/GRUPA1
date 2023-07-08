@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Creare cont</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Creaza cont</h2>
+      </div>
+      <form
+        id="form"
+        class="form"
+        action="https://httpbin.org/get"
+        method="get"
+      >
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" placeholder="marinasilaghi" id="username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input
+            type="email"
+            placeholder="marinasilaghi@yahoo.com"
+            id="email"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password</label>
+          <input type="password" placeholder="Password" id="password" />
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password check</label>
+          <input type="password" placeholder="Password two" id="password2" />
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
