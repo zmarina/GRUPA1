@@ -1,0 +1,10 @@
+.myDiv {
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+  background-color: blueviolet;
+  position: relative;
+}
+#myImage {
+  position: relative;
+}

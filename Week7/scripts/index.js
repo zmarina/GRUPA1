@@ -22,19 +22,69 @@
 // Events and add listeners
 // onclick, onload, onmouseover, onmouseup, onmousedown
 // document.getElementById("myImage") similar cu document.querySelector("#myImage")
-function faCeva() {
-  let imageEl = document.getElementById("myImage");
-  let buttonEl = document.getElementById("myButton");
+// function faCeva() {
+//   let imageEl = document.getElementById("myImage");
+//   let buttonEl = document.getElementById("myButton");
 
-  if (imageEl.style.display == "none") {
-    imageEl.style.display = "block";
-    buttonEl.innerText = "Afiseaza";
-  } else {
-    imageEl.style.display = "none";
-    buttonEl.innerText = "Ascunde";
-  }
-}
+//   if (imageEl.style.display == "none") {
+//     imageEl.style.display = "block";
+//     buttonEl.innerText = "Afiseaza";
+//   } else {
+//     imageEl.style.display = "none";
+//     buttonEl.innerText = "Ascunde";
+//   }
+// }
 
 // .addEventListeners (event,function,useCapture)
 // You can add many event handlers to one element
 // Event the same event that invokes different functions
+
+// myDivEl.addEventListener("click", faAltceva);
+// myDivEl.addEventListener("load", faAltceva);
+
+// let myVar = ()=>{
+//   console.log("dsakgdja");
+// }
+
+// window.addEventListener("keydown", (e) => {
+//   console.log(e.key);
+// });
+// let myDivEl = document.getElementById("myDiv");
+// let myImageEl = document.getElementById("myImage");
+// window.addEventListener("keydown", move);
+// let x = 0;
+// let y = 0;
+
+// function move(event) {
+//   switch (event.key) {
+//     case "ArrowUp":
+//       y = y - 10;
+//       myImageEl.style.top = y + "px"; //5px
+//       break;
+//     case "ArrowDown":
+//       y = y + 10;
+//       myImageEl.style.top = y + "px";
+//       break;
+//     case "ArrowRight":
+//       x = x + 10; //  x+=5;
+//       myImageEl.style.left = x + "px";
+//       break;
+//     case "ArrowLeft":
+//       x = x - 10; //  x-=5;
+//       myImageEl.style.left = x + "px";
+//       break;
+//     default:
+//       console.log("apasa o sageata");
+//       break;
+//   }
+// }
+
+localStorage.setItem("name", "Marina");
+localStorage.setItem("name", "Alexandra");
+console.log(localStorage.getItem("name"));
+localStorage.removeItem("name");
+
+sessionStorage.setItem("name", "Marina");
+sessionStorage.setItem("name", "Alexandra");
+console.log(sessionStorage.getItem("name"));
+sessionStorage.removeItem("name");
